@@ -1,9 +1,13 @@
 
 import { flipACoin } from "./modules/coin.mjs";
 import { createRequire } from 'module';
+import { exit } from "process";
 
-const require = createRequire(import.meta.url);
-const argv = require('minimist')(process.argv.slice(2));
-
-const call = argv.call;
-console.log(flipACoin(call));
+if(process.argv.length < 3){
+    console.log("Error: no input.\nUsage: node guess-flip --call=[heads|tails]");
+} else {
+    const require = createRequire(import.meta.url);
+    const argv = require('minimist')(process.argv.slice(2));
+    const call = argv.call;
+    console.log(flipACoin(call));
+}

@@ -101,8 +101,8 @@ export function flipACoin(call) {
   }
   return {
     call,
-    flip: flip,
-    result: result
+    flip,
+    result
   }
 }
 
