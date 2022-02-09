@@ -1,7 +1,6 @@
 
 import { flipACoin } from "./modules/coin.mjs";
 import { createRequire } from 'module';
-import { exit } from "process";
 
 if(process.argv.length < 3){
     console.log("Error: no input.\nUsage: node guess-flip --call=[heads|tails]");
