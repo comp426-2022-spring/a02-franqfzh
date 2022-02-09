@@ -100,7 +100,7 @@ export function flipACoin(call) {
     result = "lose";
   }
   return {
-    call: call,
+    call,
     flip: flip,
     result: result
   }
