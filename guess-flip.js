@@ -8,6 +8,10 @@ import { createRequire } from 'module';
         const require = createRequire(import.meta.url);
         const argv = require('minimist')(process.argv.slice(2));
         const call = argv.call;
+        if (call != "tails" || "heads"){
+            console.log("Error: no input.");
+            console.log("Usage: node guess-flip --call=[heads|tails]");
+        } else {
         console.log(flipACoin(call));
-    
+        }
 // }

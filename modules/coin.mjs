@@ -94,10 +94,7 @@ export function countFlips(array) {
 export function flipACoin(call) {
   let flip = coinFlip();
   let result;
-  if(call != "tails" || "heads"){
-    console.log( "Error: no input.");
-    console.log("Usage: node guess-flip --call=[heads|tails]");
-  } else{
+
     if (call == flip) {
       result = "win";
     } else {
@@ -108,7 +105,7 @@ export function flipACoin(call) {
       flip,
       result
     }
-  }
+  
 }
 
 /** Export 
