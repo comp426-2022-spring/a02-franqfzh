@@ -96,7 +96,8 @@ export function flipACoin(call) {
   let result;
   if (call == "" || null ){
     throw "Error: No input."
-  } else if(call != "tails" || "heads"){
+  }
+  if(call != "tails" || "heads"){
     throw "Error: Invalid input."
   } else{
     if (call == flip) {
