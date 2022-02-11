@@ -98,7 +98,7 @@ export function flipACoin(call) {
     throw "Error: No input."
   }
   if(call != "tails" || "heads"){
-    throw "Error: Invalid input."
+    throw "Error: No input."
   } else{
     if (call == flip) {
       result = "win";
