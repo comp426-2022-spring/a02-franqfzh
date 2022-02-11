@@ -2,6 +2,9 @@ import { coinFlips } from "./modules/coin.mjs";
 import { countFlips } from "./modules/coin.mjs";
 import { createRequire } from 'module';
 
+if(process.argv.length < 3){
+    console.log("Error: no input.\nUsage: node flips.js --number=#ofFlips");
+}
 const require = createRequire(import.meta.url);
 const argv = require('minimist')(process.argv.slice(2));
 
