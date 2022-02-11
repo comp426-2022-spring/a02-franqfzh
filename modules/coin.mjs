@@ -94,18 +94,23 @@ export function countFlips(array) {
 export function flipACoin(call) {
   let flip = coinFlip();
   let result;
-  if (call == flip) {
-    result = "win";
-  } else {
-    result = "lose";
-  }
-  return {
-    call,
-    flip,
-    result
+  if (call == "" || null ){
+    throw "Error: No input."
+  } else if(call != "tails" || "heads"){
+    throw "Error: Invalid input."
+  } else{
+    if (call == flip) {
+      result = "win";
+    } else {
+      result = "lose";
+    }
+    return {
+      call,
+      flip,
+      result
+    }
   }
 }
-
 
 /** Export 
  * 
