@@ -15,5 +15,5 @@ if (Number.isInteger(number)){
     
 } else {
     console.log("Error: no input.");
-    console.log("Usage: node guess-flip --call=[heads|tails]");
+    console.log("Usage: node guess-flip --number=#");
 }
