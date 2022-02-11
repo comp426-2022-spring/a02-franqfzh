@@ -9,7 +9,5 @@ import { createRequire } from 'module';
         const argv = require('minimist')(process.argv.slice(2));
         const call = argv.call;
         console.log(flipACoin(call));
-        console.log(e);
-        console.log("Usage: node guess-flip --call=[heads|tails]")
     
 // }
