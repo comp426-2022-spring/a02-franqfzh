@@ -73,13 +73,17 @@ export function countFlips(array) {
       num_tails++;
     }
   }
-
+  if (num_heads==0 && num_tails!=0){
+    return {tails: num_tails}
+  } else if (num_heads!=0 && num_tails==0){
+    return {heads: num_heads}
+  } else {
   return {
     heads: num_heads,
     tails: num_tails
   }
 }
-
+}
 /** Flip a coin!
  * 
  * Write a function that accepts one input parameter: a string either "heads" or "tails", flips a coin, and then records "win" or "lose". 
