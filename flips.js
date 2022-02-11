@@ -11,9 +11,9 @@ const number = argv.number
 if (number == "" || null){
     console.log("Error: no input.");
     console.log("Usage: node guess-flip --call=[heads|tails]");
-}
+} else {
 // console.log(number);
 var flips = coinFlips(number)
 console.log(flips);
 console.log(countFlips(flips));
-
+}
