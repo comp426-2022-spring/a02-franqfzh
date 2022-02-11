@@ -95,10 +95,10 @@ export function flipACoin(call) {
   let flip = coinFlip();
   let result;
   if (call == "" || null ){
-    throw "Error: No input."
+    throw "Error: no input."
   }
   if(call != "tails" || "heads"){
-    throw "Error: No input."
+    throw "Error: no input."
   } else{
     if (call == flip) {
       result = "win";
