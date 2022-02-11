@@ -13,6 +13,10 @@ if (Number.isInteger(number)){
     console.log(countFlips(flips));
     
 } else {
-    console.log("Error: no input.");
-    console.log("Usage: node guess-flip --number=#");
+    var oneFlip = coinFlips(1);
+    if (oneFlip == 'tails') {
+        console.log({tails: 1});
+    } else {
+        console.log({heads: 1});
+    }
 }
