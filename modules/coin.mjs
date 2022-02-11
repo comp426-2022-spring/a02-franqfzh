@@ -94,9 +94,6 @@ export function countFlips(array) {
 export function flipACoin(call) {
   let flip = coinFlip();
   let result;
-  if (call == "" || null ){
-    throw "Error: no input."
-  }
   if(call != "tails" || "heads"){
     throw "Error: no input."
   } else{
