@@ -24,8 +24,10 @@ const number = argv.number
 if (isNaN(number)) {
     var oneFlip = coinFlips(1);
     if (oneFlip == 'tails') {
+        console.log([ "tails" ]);
         console.log({tails: 1});
     } else {
+        console.log([ "heads" ]);
         console.log({heads: 1});
     }
 } else {
